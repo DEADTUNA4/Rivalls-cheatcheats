@@ -52,7 +52,7 @@ Randomize your Damage and Hit remotes every session so scripts cannot use string
 Run a task.wait(5) loop on the server that checks for any object with ClassName == "Highlight" that doesn't have a server-verified security tag.
 
 ## ⚖️ Legal Disclaimer, Rights, and Acknowledgments
-#### 🏷️ Intellectual Property & Trademarks: "Roblox," the Roblox logo, and "Powering Imagination" are trademarks of Roblox Corporation. This project is not affiliated with, sponsored by, or endorsed by Roblox Corporation. The UI framework utilized is based on the Rayfield Library by Sirius Software. All rights to the framework architecture belong to Sirius Software. The specific implementation, bypass logic, and "Ugc" resolution strategies are the intellectual property of Leafy Toxins (Copyright © 2026).
+🏷️ Intellectual Property & Trademarks: "Roblox," the Roblox logo, and "Powering Imagination" are trademarks of Roblox Corporation. This project is not affiliated with, sponsored by, or endorsed by Roblox Corporation. The UI framework utilized is based on the Rayfield Library by Sirius Software. All rights to the framework architecture belong to Sirius Software. The specific implementation, bypass logic, and "Ugc" resolution strategies are the intellectual property of Leafy Toxins (Copyright © 2026).
 
 ## 📜 Open Source & Licensing: This project is provided under the MIT License. You are permitted to fork, modify, and redistribute this code, provided that original credit is given to Leafy Toxins for the bypass logic and Sirius Software for the Rayfield UI framework.
 
