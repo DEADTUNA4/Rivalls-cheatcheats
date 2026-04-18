@@ -27,29 +27,29 @@ Iterates through every BasePart in the character model during the Stepped physic
 High-security games often rename core services (like Players to Ugc) to crash scripts. Our suite uses game:GetService("Players"), which resolves via the engine's internal ClassName GUID, making the rename irrelevant.
 
 ### 🔌 BAC Request Masking: 
-#### BAC monitors for HttpGet requests to GitHub. By using a Local-First loading strategy (readfile), this script generates zero outbound network traffic, remaining "dark" to network-based packet sniffing.
+ BAC monitors for HttpGet requests to GitHub. By using a Local-First loading strategy (readfile), this script generates zero outbound network traffic, remaining "dark" to network-based packet sniffing.
 
 ## 📂 Installation & Deployment (High-Security Protocol)
 ### 1️⃣ Step 1: 
-#### Directory Configuration: Navigate to your executor's root folder and open the workspace folder. Create a sub-folder named scripts.
+ Directory Configuration: Navigate to your executor's root folder and open the workspace folder. Create a sub-folder named scripts.
 
 ### 2️⃣ Step 2: 
-#### Asset Placement: Download main.lua and rf.lua from this repository. Place both files into: .../workspace/scripts/.
+Asset Placement: Download main.lua and rf.lua from this repository. Place both files into: .../workspace/scripts/.
 
 ### 3️⃣ Step 3: 
-#### Local Launch: Open your executor (e.g., Xenno). In the file tab, open scripts/main.lua and Execute.
+Local Launch: Open your executor (e.g., Xenno). In the file tab, open scripts/main.lua and Execute.
 
 ## 🛠️ For Blocker Developers (Detailed Security Guide)
-#### If you are a developer for Edge of Honors, implement these server-side counters to mitigate the features in this suite:
+If you are a developer for Edge of Honors, implement these server-side counters to mitigate the features in this suite:
 
 ### 🚩 Velocity Sanity: 
-#### Log player position at T1 and T2. If (P2 - P1).Magnitude > 22 while the state is Freefall, force a position reset (Rubberband).
+Log player position at T1 and T2. If (P2 - P1).Magnitude > 22 while the state is Freefall, force a position reset (Rubberband).
 
 ### 🔑 Remote Randomization: 
-#### Randomize your Damage and Hit remotes every session so scripts cannot use string.find to locate them.
+Randomize your Damage and Hit remotes every session so scripts cannot use string.find to locate them.
 
 ### 🔍 Highlight Monitoring:
-#### Run a task.wait(5) loop on the server that checks for any object with ClassName == "Highlight" that doesn't have a server-verified security tag.
+Run a task.wait(5) loop on the server that checks for any object with ClassName == "Highlight" that doesn't have a server-verified security tag.
 
 ## ⚖️ Legal Disclaimer, Rights, and Acknowledgments
 #### 🏷️ Intellectual Property & Trademarks: "Roblox," the Roblox logo, and "Powering Imagination" are trademarks of Roblox Corporation. This project is not affiliated with, sponsored by, or endorsed by Roblox Corporation. The UI framework utilized is based on the Rayfield Library by Sirius Software. All rights to the framework architecture belong to Sirius Software. The specific implementation, bypass logic, and "Ugc" resolution strategies are the intellectual property of Leafy Toxins (Copyright © 2026).
