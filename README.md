@@ -5,19 +5,26 @@
 #### Leafytoxins V8 is a high-performance framework developed by Leafy Toxins to test the boundaries of modern game security. It is specifically engineered to bypass BAC (Blox Anti-Cheat) triggers and Ugc service-level obfuscation, providing developers and researchers a clean environment for "Red Team" security analysis.
 ### 🚀 Key Features: An In-Depth Glance
 
-#### 🎯 Precision Combat Suite: This script uses a specific recursive filter to isolate the Head instance rather than generic hitboxes. This ensures maximum accuracy for hit-registration testing and allows for the study of headshot-specific server-side detection.
+#### 🎯 Precision Combat Suite: 
+This script uses a specific recursive filter to isolate the Head instance rather than generic hitboxes. This ensures maximum accuracy for hit-registration testing and allows for the study of headshot-specific server-side detection.
 
-#### 🖱️ MouseButton2 Trigger: Hard-coded to the Right-Click input to simulate realistic "Aim Down Sights" (ADS) behavior. This is vital for researchers testing "Snap-to-Target" mechanics and analyzing how anti-cheats track rapid CFrame adjustments.
+#### 🖱️ MouseButton2 Trigger: 
+Hard-coded to the Right-Click input to simulate realistic "Aim Down Sights" (ADS) behavior. This is vital for researchers testing "Snap-to-Target" mechanics and analyzing how anti-cheats track rapid CFrame adjustments.
 
-#### 🌀 Hardware-Rendered FOV Circle: Utilizing the Drawing API, the script draws a 2D overlay directly onto the viewport. Because this exists in the overlay layer and not the DataModel, it bypasses standard UI-scanning scripts that check for unauthorized ScreenGuis.
+#### 🌀 Hardware-Rendered FOV Circle:
+Utilizing the Drawing API, the script draws a 2D overlay directly onto the viewport. Because this exists in the overlay layer and not the DataModel, it bypasses standard UI-scanning scripts that check for unauthorized ScreenGuis.
 
-#### ⚡ Adaptive Movement Mechanics: A sophisticated movement exploit that monitors UserInputService for jump requests. If a second jump is detected within a 0.3-second window, the WalkSpeed is instantly multiplied to test state-based velocity blockers.
+#### ⚡ Adaptive Movement Mechanics:
+A sophisticated movement exploit that monitors UserInputService for jump requests. If a second jump is detected within a 0.3-second window, the WalkSpeed is instantly multiplied to test state-based velocity blockers.
 
-#### 🏃 State-Based Speed Reset: To bypass "Average Speed" checkers, the script tracks the Humanoid's state. As soon as the state changes from Freefall back to Landed, the speed is hard-reset to 16.
+#### 🏃 State-Based Speed Reset: 
+To bypass "Average Speed" checkers, the script tracks the Humanoid's state. As soon as the state changes from Freefall back to Landed, the speed is hard-reset to 16.
 
-#### 👻 Collision-Layer Noclip: Iterates through every BasePart in the character model during the Stepped physics frame to ensure collision is suppressed exactly when needed for high-speed traversal testing.
+#### 👻 Collision-Layer Noclip:
+Iterates through every BasePart in the character model during the Stepped physics frame to ensure collision is suppressed exactly when needed for high-speed traversal testing.
 
-## 🛡️ Stealth & Bypass Architecture: High-security games often rename core services (like Players to Ugc) to crash scripts. Our suite uses game:GetService("Players"), which resolves via the engine's internal ClassName GUID, making the rename irrelevant.
+## 🛡️ Stealth & Bypass Architecture: 
+High-security games often rename core services (like Players to Ugc) to crash scripts. Our suite uses game:GetService("Players"), which resolves via the engine's internal ClassName GUID, making the rename irrelevant.
 
 ### 🔌 BAC Request Masking: 
 #### BAC monitors for HttpGet requests to GitHub. By using a Local-First loading strategy (readfile), this script generates zero outbound network traffic, remaining "dark" to network-based packet sniffing.
