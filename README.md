@@ -1,5 +1,5 @@
 # 🌿 Leafytoxins Research Suite V8
-KEY: ####http://key.leafscripts.surge.sh
+KEY: http://key.leafscripts.surge.sh
  The Definitive Game Security Testing Framework for Rivals & Edge of Honors
  
 ## 📖 What is Leafytoxins?
